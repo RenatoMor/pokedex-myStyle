@@ -1,0 +1,230 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+.grass {
+    background-color: #77c850;
+}
+.fire {
+    background-color: #ee7f30;
+}
+.water {
+    background-color: #678fee;
+}
+.electric {
+    background-color: #f7cf2e;
+}
+.ice {
+    background-color: #98d5d7;
+}
+.ground {
+    background-color: #dfbf69;
+}
+.flying {
+    background-color: #a98ff0;
+}
+.poison {
+    background-color: #a040a0;
+}
+.fighting {
+    background-color: #bf3029;
+}
+.psychic {
+    background-color: #f65687;
+}
+.dark {
+    background-color: #725847;
+}
+.rock {
+    background-color: #b8a137;
+}
+.bug {
+    background-color: #a8b720;
+}
+.ghost {
+    background-color: #6e5896;
+}
+.steel {
+    background-color: #b9b7cf;
+}
+.dragon {
+    background-color: #6f38f6;
+}
+.fairy {
+    background-color: #f9aec7;
+}
+
+#pokemonList {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(.1rem); 
+    -webkit-backdrop-filter: blur(0px); 
+    
+}
+
+
+.pokemon {
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.pokemon .number {
+    color:#000000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name {
+    color: #fff ;
+    margin-bottom: .25rem;
+    text-transform: capitalize;
+    font-family: "Space Grotesk", serif;
+    font-size: 1.5rem;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.pokemon .detail .types {
+    list-style: none;
+    
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: .4rem;
+    filter: brightness(1.1);
+    text-align: center;
+    
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+    border-style: none;
+    align-self: flex-end;   
+    width: 100px;
+    height: 100px;
+    animation: rotate 5s linear 0s infinite alternate;
+}
+    @keyframes rotate {
+        100% {
+            transform: rotate(-10deg);
+        }
+    }
+
+.details-button {
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 8px;
+    border: none;
+    opacity: .8;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px 120px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.details-button:hover {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0.8) 100%);
+    
+}
+
+.extra-details h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.extra-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.extra-details ul li {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    color: #000000;
+}
+
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    width: 10rem;
+    height: 3rem;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(0, 18, 158) 0%, rgba(19, 0, 105, 0.8) 100%);
+    border: none;
+    border-radius: 1rem;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.pagination button:hover {
+    background: linear-gradient(rgba(108,121,219,1) 0%, rgba(19, 0, 105, 0.8) 100%);
+
+}
+
+h1 {
+    font-family: "Protest Revolution", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    
+}

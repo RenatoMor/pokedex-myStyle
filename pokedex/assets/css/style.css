@@ -1,0 +1,23 @@
+@import url(./global.css);
+@import url(./pokedex.css);
+
+body {
+    background-image: url('../img/Back-Img4.jpg');
+}
+
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto; /* center the content */ 
+        border-radius: 1rem;
+    } 
+}
+
+
+
+
+
+
+
